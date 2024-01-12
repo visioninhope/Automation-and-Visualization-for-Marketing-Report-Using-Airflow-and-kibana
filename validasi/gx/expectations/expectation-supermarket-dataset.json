@@ -1,0 +1,69 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "expectation-supermarket-dataset",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "index"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "rating",
+        "max_value": 10.0,
+        "min_value": 4.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "city",
+        "value_set": [
+          "Yangon",
+          "Naypyitaw",
+          "Mandalay"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "quantity",
+        "type_list": [
+          "int64"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "payment"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_increasing",
+      "kwargs": {
+        "column": "index"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "tax_5%"
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "great_expectations_version": "0.18.7"
+  }
+}

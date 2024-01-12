@@ -1,0 +1,229 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {},
+      "data_asset_name": "supermarket-sales",
+      "data_connector_name": "fluent",
+      "datasource_name": "csv-supermaket-sales"
+    },
+    "batch_markers": {
+      "ge_load_time": "20240102T104517.018919Z",
+      "pandas_data_fingerprint": "3b4b3c2b8c99bcd83834a37401f755b1"
+    },
+    "batch_spec": {
+      "reader_method": "read_csv",
+      "reader_options": {
+        "filepath_or_buffer": "/Users/achmadnauvaldi/Documents/DS/phase2/M3/p2-ftds010-hck-m3-Th0usandSunny/data/P2M3_Achmad_Nauvaldi_data_clean.csv"
+      }
+    },
+    "checkpoint_id": null,
+    "checkpoint_name": "checkpoint_1",
+    "expectation_suite_name": "expectation-supermarket-dataset",
+    "great_expectations_version": "0.18.7",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2024-01-02T17:45:16.996304+07:00"
+    },
+    "validation_id": null,
+    "validation_time": "20240102T104517.116068Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "csv-supermaket-sales-supermarket-sales",
+          "column": "index"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 1000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_increasing",
+        "kwargs": {
+          "batch_id": "csv-supermaket-sales-supermarket-sales",
+          "column": "index"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 1000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "csv-supermaket-sales-supermarket-sales",
+          "column": "rating",
+          "max_value": 10.0,
+          "min_value": 4.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 1000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "csv-supermaket-sales-supermarket-sales",
+          "column": "city",
+          "value_set": [
+            "Yangon",
+            "Naypyitaw",
+            "Mandalay"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 1000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "csv-supermaket-sales-supermarket-sales",
+          "column": "quantity",
+          "type_list": [
+            "int64"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "int64"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "csv-supermaket-sales-supermarket-sales",
+          "column": "payment"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 1000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "csv-supermaket-sales-supermarket-sales",
+          "column": "tax_5%"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {},
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 7,
+    "success_percent": 100.0,
+    "successful_expectations": 7,
+    "unsuccessful_expectations": 0
+  },
+  "success": true
+}
